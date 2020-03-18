@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="cn" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>使用hexo+github搭建个人博客 - Aexing</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Fechin,"> 
+    <meta name="description" content="搭建个人博客也是属于心血来潮，相比较简书和csdn之类而言，个人博客是自由的，自定义自己喜欢的风格，记录自己的学习路程和心得。另外一方面，有属于自己的博客，也是件酷酷的事情。搜索网上搭建个人博客，大,"> 
+    <meta name="author" content="Aexing"> 
+    <link rel="alternative" href="atom.xml" title="Aexing" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    
+    
+<link rel="stylesheet" href="/css/diaspora.css">
+
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({
+              google_ad_client: "ca-pub-8691406134231910",
+              enable_page_level_ads: true
+         });
+    </script>
+    <script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+    </script>
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body class="loading">
+    <span id="config-title" style="display:none">Aexing</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="http://yoursite.com"></a>
+    <div title="播放/暂停" class="iconfont icon-play"></div>
+    <h3 class="subtitle">使用hexo+github搭建个人博客</h3>
+    <div class="social">
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">使用hexo+github搭建个人博客</h1>
+        <div class="stuff">
+            <span>三月 18, 2020</span>
+            
+
+        </div>
+        <div class="content markdown">
+            <p>搭建个人博客也是属于心血来潮，相比较简书和csdn之类而言，个人博客是自由的，自定义自己喜欢的风格，记录自己的学习路程和心得。另外一方面，有属于自己的博客，也是件酷酷的事情。搜索网上搭建个人博客，大多是Github+Hexo的组合，步骤也都大同小异，但是由于博客文章较旧，在实时运行当中，还是会出现不少的bug。前人栽树后人乘凉，为避免后来者掉进相同的坑，特写下搭建博客的步骤。 我的博客： <a href="https://soultorture.github.io/" target="_blank" rel="noopener">https://soultorture.github.io/</a></p>
+<p><img src="http://s1.wailian.download/2020/03/18/hoxe.jpg" alt="img"></p>
+<p>二、准备<br>基于Windows系统（开发者最好使用Linux）</p>
+<p>安装<a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a></p>
+<p>安装<a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a></p>
+<p>git –version</p>
+<p>node –version</p>
+<p><img src="http://s1.wailian.download/2020/03/18/yz.png" alt="img"></p>
+<p>git中输入命令，有版本号出现则安装成功。</p>
+<p>三、搭建流程<br>3.1、安装 Hexo</p>
+<p>npm install -g hexo-cli<br>安装成功后，创建一个文件夹（列如我的d盘hexo）</p>
+<p>接着进入hexo文件夹,输入一下命令</p>
+<p>npm install<br>运行成功后我们可以查询hexo这个文件下，可以发现文件夹下新增了很多文件，如下</p>
+<p><img src="http://s1.wailian.download/2020/03/18/wj.png" alt="img"></p>
+<p>找到hexo文件夹下 _config.yml ，这个文件就是网站主题的的配置文件，后面和github page关联和切换主题时，需要使用到。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g&#96;</span><br><span class="line">&#96;hexo s</span><br></pre></td></tr></table></figure>
+
+<p><img src="http://s1.wailian.download/2020/03/18/yx.png" alt="img"></p>
+<p>在执行hexo s 后，会出现一个网址<a href="http://localhost:4000/，将其复制（需要注意的是，在cmd中不可用ctrl" target="_blank" rel="noopener">http://localhost:4000/，将其复制（需要注意的是，在cmd中不可用ctrl</a> + c 来复制，Ctrl + C为停止命令）。打开该网址后，可以看到网站的雏形。</p>
+<p><img src="http://s1.wailian.download/2020/03/18/hexoz.png" alt="img"></p>
+<p>四、自定义主题<br>4.1、创建github仓库</p>
+<p><img src="http://s1.wailian.download/2020/03/18/sshlj.png" alt="img"></p>
+<p>你的用户名+github.io</p>
+<p>4.2、发布</p>
+<p>接下来需要使用 Git bash 来进行命令的执行，在hexo文件夹中右击鼠标，你会发现有Git bash 选项，点击进入。执行命令：</p>
+<p>npm install hexo-deployer-git –save<br>最后就是发布了，执行以下命令：</p>
+<p>hexo g<br>hexo d</p>
+<h2 id="完成后，你就有属于自己的博客了，在github的setting中-可以看到自己的博客地址"><a href="#完成后，你就有属于自己的博客了，在github的setting中-可以看到自己的博客地址" class="headerlink" title="完成后，你就有属于自己的博客了，在github的setting中 可以看到自己的博客地址."></a>完成后，你就有属于自己的博客了，在github的setting中 可以看到自己的博客地址.</h2>
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        
+                            <li title='0' data-url='http://link.hhtjim.com/163/425570952.mp3'></li>
+                        
+                    
+                        
+                            <li title='1' data-url='http://link.hhtjim.com/163/425570952.mp3'></li>
+                        
+                    
+                </ul>
+            
+        </div>
+        
+    <div id='gitalk-container' class="comment link"
+		data-enable='false'
+        data-ae='false'
+        data-ci=''
+        data-cs=''
+        data-r=''
+        data-o=''
+        data-a=''
+        data-d='false'
+    >查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/typed.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</html>
