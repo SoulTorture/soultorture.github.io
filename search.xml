@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>虚拟机VMware 15安装Mac Os10.14教程</title>
+    <url>/2020/03/19/%E8%99%9A%E6%8B%9F%E6%9C%BAVMware-15%E5%AE%89%E8%A3%85Mac-Os10-14%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<p><strong>安装准备</strong>：</p>
+<p>1：VMware Workstation Pro v15.0.0<br>2：解锁工具Unlocker v3.0.0<br>3：macOS Mojave 10.14</p>
+<p><strong>安装过程：</strong>1：关闭VMware ，打开任务管理器，并找到后台进程，右键-结束所有VMware的进程（你可以直接输入v）。如下</p>
+<p><img src="http://s1.wailian.download/2020/03/19/c5af5ae94f52610faafe2cefb5ef4f40.png" alt="img"><br>2：找到解锁工具，右键-以管理员身份运行win-install.cmd,脚本运行完毕会自动关闭。</p>
+<p><img src="http://s1.wailian.download/2020/03/19/vm-1024x474.png" alt="img"></p>
+<p>3：打开VMware，创建新的虚拟机，选择“典型”。</p>
+<p><img src="http://s1.wailian.download/2020/03/19/-1024x55911ddbe28717527a3.png" alt="img"></p>
+<p>4：安装来源是macOS Mojave 10.14，注意浏览的时候文件类型要选择所有文件，不然找不到macOS Mojave 10.14 18A391 Lazy Installer.cdr</p>
+<p><img src="http://s1.wailian.download/2020/03/19/-1024x5594aeec8adc37350d4.png" alt="img"></p>
+<p>5：系统类型是MAC OS 10.14,如果没有以上的解锁操作，选项里是没有MAC OS可选的。</p>
+<p><img src="http://s1.wailian.download/2020/03/19/mac-1024x559.png" alt="img"></p>
+<p>7：以下的几步默认即可，如果后续觉得配置不够，可以自行调整，配置完毕，不要急着打开虚拟机，找到刚才虚拟机系统文件路径下的macOS 10.14.vmx，用记事本打开，在 smc.present = “TRUE” 后添加（smc.version = “0”）(建议您复制，不包括括号) 后保存。</p>
+<p><img src="http://s1.wailian.download/2020/03/19/-1024x5592bfbc4a79c47a5fc.png" alt="img"></p>
+<p>8：现在就可以打开虚拟机了</p>
+<p><img src="http://s1.wailian.download/2020/03/19/-1024x559f0e6d82f091faf49.png" alt="img"></p>
+<p>9：语言选择简体中文，同意条款，继续安装。</p>
+<p><img src="http://s1.wailian.download/2020/03/19/-1024x559e915458dece06f3d.png" alt="img"></p>
+<p>10：到这一步点击上方“实用工具”里的磁盘工具</p>
+<p><img src="http://s1.wailian.download/2020/03/19/-1024x5598a32c1af3b20fe6d.png" alt="img"></p>
+<p>11：单击左侧的vmware虚拟硬盘，然后找到上方的“编辑”-“抹掉”，名称就叫mac os吧</p>
+<p><img src="http://s1.wailian.download/2020/03/19/1-1024x55936c4e43a0cc33f0b.png" alt="img"></p>
+<p><img src="http://s1.wailian.download/2020/03/19/1-1024x559.png" alt="img"></p>
+<p><img src="http://s1.wailian.download/2020/03/19/-1024x559.png" alt="img"></p>
+<p>后面你就可以自己设置了</p>
+<p>云盘密码：bmin</p>
+<p><a href="https://pan.baidu.com/s/19_j7oYJir1FKJhbWGBIk6Q" target="_blank" rel="noopener">https://pan.baidu.com/s/19_j7oYJir1FKJhbWGBIk6Q</a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>Windows+Office永久激活</title>
     <url>/2020/03/18/Windows-Office%E6%B0%B8%E4%B9%85%E6%BF%80%E6%B4%BB/</url>
     <content><![CDATA[<p><img src="http://s1.wailian.download/2020/03/18/20190228103565666566.jpg" alt="img"></p>
